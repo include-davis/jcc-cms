@@ -1,0 +1,17 @@
+{
+    "name": "include-cms-demo",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "hearth dev",
+        "build": "hearth build",
+        "start": "hearth start",
+        "migrate:up": "migrate-mongo up",
+        "migrate:down": "migrate-mongo down"
+    },
+    "dependencies": {
+        "@include/hearth": "git@github.com:include-davis/Include-CMS.git#v1.0.10",
+        "eslint": "^8",
+        "eslint-plugin-prettier": "^5.0.1"
+    }
+}
