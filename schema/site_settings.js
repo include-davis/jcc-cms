@@ -14,8 +14,20 @@ siteSettings
     required: true,
   })
   .createField({
-    name: 'apply_form_link',
-    displayName: 'Apply Form Link',
+    name: 'partnership_form_link',
+    displayName: 'Partnership Form Link',
+    type: FieldType.SHORT_TEXT,
+    required: true,
+  })
+  .createField({
+    name: 'join_form_link',
+    displayName: 'Join Form Link',
+    type: FieldType.SHORT_TEXT,
+    required: true,
+  })
+  .createField({
+    name: 'alumni_form_link',
+    displayName: 'Alumni Form Link',
     type: FieldType.SHORT_TEXT,
     required: true,
   });

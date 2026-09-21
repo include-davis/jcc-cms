@@ -36,6 +36,12 @@ committees
     displayName: 'Description',
     type: FieldType.LONG_TEXT,
     required: true,
+  })
+  .createField({
+    name: 'calendar_id',
+    displayName: 'Google Calendar ID',
+    type: FieldType.SHORT_TEXT,
+    required: false,
   });
 
 module.exports = committees;

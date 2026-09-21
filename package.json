@@ -7,11 +7,15 @@
         "build": "hearth build",
         "start": "hearth start",
         "migrate:up": "migrate-mongo up",
-        "migrate:down": "migrate-mongo down"
+        "migrate:down": "migrate-mongo down",
+        "user:set": "node scripts/manage-user.js"
     },
     "dependencies": {
         "@include/hearth": "git@github.com:include-davis/Include-CMS.git#v1.0.10",
+        "bcryptjs": "^2.4.3",
+        "dotenv": "^16.4.5",
         "eslint": "^8",
-        "eslint-plugin-prettier": "^5.0.1"
+        "eslint-plugin-prettier": "^5.0.1",
+        "mongodb": "^6.9.0"
     }
 }
