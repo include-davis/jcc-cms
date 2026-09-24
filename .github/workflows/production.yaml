@@ -32,7 +32,7 @@ jobs:
       - name: Publish to Vercel
         working-directory: ./runtime-environment
         run: >
-          vercel
+          npx --yes vercel@latest
           --token ${{ secrets.VERCEL_TOKEN }}
           -n ${{ vars.VERCEL_PROJECT }}
           --yes
