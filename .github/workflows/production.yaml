@@ -33,17 +33,17 @@ jobs:
         working-directory: ./runtime-environment
         run: >
           npx --yes vercel@latest
-          --token ${{ secrets.VERCEL_TOKEN }}
-          -n ${{ vars.VERCEL_PROJECT }}
+          --token "${{ secrets.VERCEL_TOKEN }}"
+          -n "${{ vars.VERCEL_PROJECT }}"
           --yes
           --prod
-          --env MONGO_CONNECTION_STRING=${{ secrets.MONGO_CONNECTION_STRING }}
-          --env CLOUDINARY_NAME=${{ secrets.CLOUDINARY_NAME }}
-          --env CLOUDINARY_API_KEY=${{ secrets.CLOUDINARY_API_KEY }}
-          --env CLOUDINARY_API_SECRET=${{ secrets.CLOUDINARY_API_SECRET }}
-          --env JWT_SECRET=${{ secrets.JWT_SECRET }}
-          --env REVALIDATE_URL=${{ vars.REVALIDATE_URL }}
-          --build-env MONGO_CONNECTION_STRING=${{ secrets.MONGO_CONNECTION_STRING }}
+          --env "MONGO_CONNECTION_STRING=${{ secrets.MONGO_CONNECTION_STRING }}"
+          --env "CLOUDINARY_NAME=${{ secrets.CLOUDINARY_NAME }}"
+          --env "CLOUDINARY_API_KEY=${{ secrets.CLOUDINARY_API_KEY }}"
+          --env "CLOUDINARY_API_SECRET=${{ secrets.CLOUDINARY_API_SECRET }}"
+          --env "JWT_SECRET=${{ secrets.JWT_SECRET }}"
+          --env "REVALIDATE_URL=${{ vars.REVALIDATE_URL }}"
+          --build-env "MONGO_CONNECTION_STRING=${{ secrets.MONGO_CONNECTION_STRING }}"
 
       - name: Success
         run: echo "🚀  Deploy successful 🚀 "
