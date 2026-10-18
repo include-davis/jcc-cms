@@ -27,8 +27,8 @@ committeeMembers
   })
   .createField({
     name: 'is_lead',
-    displayName: 'Is Lead',
-    type: FieldType.BOOLEAN,
+    displayName: 'Is Lead (type true or false)',
+    type: FieldType.SHORT_TEXT,
     required: true,
   })
   .createField({
